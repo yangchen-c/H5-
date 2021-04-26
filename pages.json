@@ -1,0 +1,66 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "手机注册",
+				"app-plus": {
+					// "bounce" : "none"
+					"titleNView":false
+				}
+			}
+		}, {
+			"path": "pages/about-platform/about-platform",
+			"style": {
+				"navigationBarTitleText": "关于平台",
+				"app-plus": {
+					"bounce" : "none"
+				}
+			}
+		}, {
+			"path": "pages/register-clause/register-clause",
+			"style": {
+				"navigationBarTitleText": "注册协议",
+				"app-plus": {
+					"bounce" : "none"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/article/article",
+            "style" : {
+				"navigationBarTitleText": "",
+				"app-plus": { 
+					"bounce" : "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/down-app/down-app",
+            "style" : {
+				"navigationBarTitleText": "下载APP",
+				"app-plus": {
+					"titleNView": false,
+					"bounce" : "none"
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		// #ifdef APP-PLUS
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#000",
+		// #endif 
+		"backgroundColor": "#000"
+	},
+	// 模式匹配，仅开发模式生效（可以只看到单个页面）
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "丝路e购",
+			"pathName": "pages/register/register",
+			"query": ""
+		}]
+	}
+}

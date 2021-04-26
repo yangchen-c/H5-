@@ -1,0 +1,169 @@
+{
+    "name" : "沐云斋",
+    "appid" : "__UNI__82A0536",
+    "description" : "",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
+    "transformPx" : false,
+    "networkTimeout" : {
+        "request" : 60000
+    },
+    "app-plus" : {
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Payment" : {},
+            "Share" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "schemes" : "molinaint"
+            },
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "丝路e购需要您的同意，才能访问相册进行选择照片上传/发布信息，如禁止将无法上传选择照片上传/发布信息",
+                    "NSPhotoLibraryAddUsageDescription" : "丝路e购需要您的同意，才能访问相册进行照片的存储，如禁止将无法存储照片",
+                    "NSCameraUsageDescription" : "丝路e购需要您的同意，才能访问相机进行拍照，如禁止将无法拍照更新信息",
+                    "NSLocationWhenInUseUsageDescription" : "丝路e购需要您的同意，才能访问GPRS进行定位，如禁止将无法更新当前定位信息",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "丝路e购需要您的同意，才能访问GPRS进行定位，如禁止将无法更新当前定位信息",
+                    "NSCalendarsUsageDescription" : ""
+                },
+                "urltypes" : "molinaint",
+                "urlschemewhitelist" : "alipay,weixin,qq",
+                "UIBackgroundModes" : "location"
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "payment" : {
+                    "alipay" : {}
+                },
+                "maps" : {},
+                "push" : {},
+                "share" : {
+                    "qq" : {
+                        "appid" : "101804213"
+                    },
+                    "weixin" : {
+                        "appid" : "wxf2fe3af0763f8dd1",
+                        "appsecret" : "9d030692c22bb9e46311ee720eb62ec6"
+                    }
+                }
+            },
+            "icons" : {
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "ldpi" : "unpackage/res/icons/48x48.png",
+                    "mdpi" : "unpackage/res/icons/48x48.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                }
+            },
+            "apple" : {
+                "urlschemewhitelist" : [ "iosamap", "baidumap" ]
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/app/480x762.png",
+                    "xhdpi" : "unpackage/res/app/720x1242.png",
+                    "xxhdpi" : "unpackage/res/app/1080x1882.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "unpackage/res/app/1242x2688.png",
+                        "portrait-896h@2x" : "unpackage/res/app/828x1792.png",
+                        "iphonex" : "unpackage/res/app/1125x2436.png",
+                        "retina55" : "unpackage/res/app/1242x2208.png",
+                        "retina47" : "unpackage/res/app/750x1334.png",
+                        "retina40" : "unpackage/res/app/640x1136.png",
+                        "retina35" : "unpackage/res/app/640x960.png"
+                    }
+                }
+            }
+        }
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "appid" : "wxd50c5239417e439f",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "test"
+            }
+        }
+    },
+    "h5" : {
+        "title" : "沐云斋",
+        "domain" : "http://balabalal.cn",
+        "devServer" : {
+            "https" : true,
+            "port" : ""
+        },
+        "router" : {
+            "base" : "./"
+        }
+    }
+}
